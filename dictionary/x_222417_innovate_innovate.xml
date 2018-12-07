@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Innovate" max_length="40" name="x_222417_innovate_innovate" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Idea Implemented" max_length="40" name="u_boolean_5" type="boolean"/>
+        <element label="Idea Implementation" max_length="40" name="u_boolean_6" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="process" label="New Choice" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element label="Cost Savings" sequence="0" value="cost"/>
+                <element label="Process Improvement" sequence="1" value="process"/>
+                <element label="Team Building" sequence="2" value="team"/>
+            </choice>
+        </element>
+        <element label="New Due Date" mandatory="true" max_length="40" name="u_due_date_9" type="due_date"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="New Price" mandatory="true" max_length="20" name="u_price_8" type="price"/>
+        <element attributes="edge_encryption_enabled=true" label="New String" mandatory="true" max_length="125" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="1000" name="u_string_3" type="string"/>
+        <element attributes="preview_selector=true,preview_first=true,is_multi_text=true" label="Wiki description" max_length="65536" name="u_wiki_text_7" read_only="true" type="wiki_text"/>
+    </element>
+</database>
